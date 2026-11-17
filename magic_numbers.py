@@ -10,7 +10,7 @@ force = COULOMBS_CONSTANT * q1 * q2 / (distance ** 2)
 print("Electric Force between q1 and q2 is: ", force, "Newton")
 # Second Section
 num = int(input('Enter an integer number: '))
-if num % 2 == 0:
+if num % EVEN_DIVISOR == 0:
     print(num, "is an even number.")
 else:
     print(num, "is an odd number.")

@@ -1,5 +1,24 @@
 # by Kami Bigdely
-# Extract Class
+# Recipe class
+class Recipe:
+    def __init__(self, name, prep_time, is_veggie, food_type, cuisine, ingredients, instructions):
+        self.name = name
+        self.prep_time = prep_time
+        self.is_veggie = is_veggie
+        self.food_type = food_type
+        self.cuisine = cuisine
+        self.ingredients = ingredients
+        self.instructions = instructions
+    def display(self):
+        print("Name:", self.name)
+        print("Prep time:", self.prep_time, "mins")
+        print("Is Veggie?", "Yes" if self.is_veggie else "No")
+        print("Food Type:", self.food_type)
+        print("Cuisine:", self.cuisine)
+        print(", ".join(self.ingredients))
+        print("recipe", self.instructions)
+        print("***")
+
 foods = {'butternut squash soup':[45, True, 'soup','North African',\
      ['butter squash','onion','carrot', 'garlic','butter','black pepper', 'cinnamon','coconut milk']\
         ,'1. Grill the butter squash, onion, carrot and garlic in the oven until'

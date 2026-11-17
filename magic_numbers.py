@@ -16,7 +16,7 @@ force = calculate_electric_force(q1, q2, distance)
 print("Electric Force between q1 and q2 is: ", force, "Newton")
 # Second Section
 num = int(input('Enter an integer number: '))
-if num % EVEN_DIVISOR == 0:
+if is_even(num):
     print(num, "is an even number.")
 else:
     print(num, "is an odd number.")

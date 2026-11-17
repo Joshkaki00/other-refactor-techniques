@@ -26,13 +26,14 @@ class Steak:
     def is_cooking_criteria_satisfied(self):
         return self.is_well_done() or self.is_medium()
 
+steak = Steak(
+    time=30,          # [min]
+    temperature=103,  # [celsius]
+    pressure=20,      # [psi]
+    desired_state='well-done',
+)
 
-time = 30 # [min]
-temp = 103 # [celcius]
-pressure = 20 # [psi]
-desired_state = 'well-done'
-
-if is_cookeding_criteria_satisfied(time, temp, pressure, desired_state):
+if steak.is_cooking_criteria_satisfied():
     print('cooking is done.')
 else:
     print('ongoing cooking.')

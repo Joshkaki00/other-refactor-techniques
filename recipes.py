@@ -9,6 +9,7 @@ class Recipe:
         self.cuisine = cuisine
         self.ingredients = ingredients
         self.instructions = instructions
+
     def display(self):
         print("Name:", self.name)
         print("Prep time:", self.prep_time, "mins")

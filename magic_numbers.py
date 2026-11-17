@@ -1,7 +1,7 @@
 # by Kami Bigdely 
-# Replace magic numbers with named constanst
+COULOMBS_CONSTANT = 8.9875517923 * 1e9  # N·m²/C²
+EVEN_DIVISOR = 2
 
-# First Section
 # Given two point charges, calcualte the electric force exerted on them.
 q1 = int(input('Enter a value of charge q1: '))
 q2 = int(input('Enter a value of charge q2: '))

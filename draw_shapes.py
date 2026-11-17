@@ -16,8 +16,17 @@ class Shape:
     def display(self):
         if self.visible:
             print(f'drew the {self.__class__.__name__.lower()}.')
-    
-    
+
+class Circle(Shape):
+    def __init__(self, x, y, r, visible=True):
+        super().__init__(visible)
+        self.center_x = x
+        self.center_y = y
+        self.r = r
+
+    def get_center(self):
+        return self.center_x, self.center_y
+
 class Rectangle:
     
     def __init__(self, x, y, width, height, visible = True):

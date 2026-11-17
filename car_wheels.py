@@ -63,17 +63,15 @@ class Cabin:
     
 
 engine = Engine()
-# TODO: Rewrite the following after moving tpms to the 'Wheel' class.
-wheels = [Wheel(None, 'front-right'), Wheel(None, 'front-left'), 
-          Wheel(None, 'back-right'), Wheel(None, 'back-left')]
 
-cabin  = Cabin()
+wheels = [
+    Wheel(None, 'front-right', Tpms(983408543)),
+    Wheel(None, 'front-left', Tpms(4343083)),
+    Wheel(None, 'back-right', Tpms(23654835)),
+    Wheel(None, 'back-left', Tpms(3498857)),
+]
 
-tpms_di = {'front-right': Tpms(983408543), 'front-left':Tpms(4343083),
-               'back-right':Tpms(23654835), 'back_left':Tpms(3498857)}
-
+cabin = Cabin()
 fuel_tank = FuelTank()
 
-my_car = Car(engine, wheels, cabin, tpms_di, fuel_tank)
-
-
+my_car = Car(engine, wheels, cabin, fuel_tank)

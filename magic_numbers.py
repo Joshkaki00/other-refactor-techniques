@@ -6,6 +6,8 @@ EVEN_DIVISOR = 2
 def calculate_electric_force(q1, q2, distance):
     return COULOMBS_CONSTANT * q1 * q2 / (distance ** 2)
 
+def is_even(num):
+    return num % EVEN_DIVISOR == 0
 
 q1 = int(input('Enter a value of charge q1: '))
 q2 = int(input('Enter a value of charge q2: '))
